@@ -13,7 +13,7 @@
     }
 
     ul.dictionaries {
-      margin-top: 5em;
+      margin-top: 3em;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-size: 2em;
     }
@@ -31,6 +31,33 @@
     ul.dictionaries li a::after {
       content: " 🔗";
     }
+
+    ul.dictionary-screen-recordings {
+      position: relative;
+      margin-top: 3em;
+      width: 100%;
+      padding-left: 0;
+    }
+
+    ul.dictionary-screen-recordings li {
+      display: inline-block;
+      width: 48%;
+      list-style: none;
+    }
+
+    ul.dictionary-screen-recordings li img {
+      max-width: 100%;
+    }
+
+    @media (max-width: 375px) {
+      ul.dictionaries {
+        font-size: 1.6em;
+      }
+
+      ul.dictionary-screen-recordings li {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -39,6 +66,11 @@
       <li><a href="cedict" target="_blank" rel="noopener noreferrer">CC-CEDICT Webapp</a></li>
       <li><a href="handedict" target="_blank" rel="noopener noreferrer">HanDeDict Webapp</a></li>
       <li><a href="cfdict" target="_blank" rel="noopener noreferrer">CFDICT Webapp</a></li>
+    </ul>
+    <ul class="dictionary-screen-recordings">
+      <li><img src="images/HanDeDict-JH-20200512.gif" alt="GIF-HanDeDict"></li>
+      <li><img src="images/CFDICT-JH-20200513.gif" alt="GIF-CFDICT"></li>
+      <li><img src="images/CC-CEDICT-JH-20200510.gif" alt="GIF-CC-CEDICT"></li>
     </ul>
   </div>
 </body>
